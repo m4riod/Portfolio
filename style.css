@@ -1,0 +1,509 @@
+
+/*ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2.titulo{
+    color:#fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #ff0000;
+}
+
+header a{
+    color:#707070;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color:#fff;
+    transform:scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ff0000;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.contato button:hover{
+    box-shadow: 0px 0px 8px #ff04046e;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 40px;
+    gap: 90px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #ff0000;
+}
+
+.topo-do-site .txt-topo-site p{
+    color:#fff;
+    margin: 40px 0;
+
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative; 
+    animation: flutuar 2s ease-in-out infinite alternate; 
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color:#fff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    margin-top: 45px;
+    transition: .2s; 
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff58;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 60px;
+    color:#ff0000;
+
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+
+}
+
+/* ESTILO DAS PAGINAS TECNOLOGICAS */
+
+
+section.realidade-virtual{
+    padding: 40px 4%
+}
+
+section.realidade-virtual .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.realidade-virtual .txt-sobre{
+    color:#fff;
+}
+
+.realidade-virtual .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.realidade-virtual .txt-sobre h2 span{
+    color: #ff0000;
+}
+
+.realidade-virtual .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+section.realidade-aumentada{
+    padding: 40px 4%;
+}
+
+section.realidade-aumentada .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.realidade-aumentada .txt-sobre{
+    color:#fff;
+}
+
+.realidade-aumentada .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.realidade-aumentada .txt-sobre h2 span{
+    color: #ff0000;
+}
+
+.realidade-aumentada .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+section.ciencia-de-dados{
+    padding: 40px 4%;
+}
+
+section.ciencia-de-dados .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.ciencia-de-dados .txt-sobre{
+    color:#fff;
+}
+
+.ciencia-de-dados .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.ciencia-de-dados .txt-sobre h2 span{
+    color: #ff0000;
+}
+
+.ciencia-de-dados .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+section.IOT{
+    padding: 40px 4%;
+}
+
+section.IOT .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.IOT .txt-sobre{
+    color:#fff;
+}
+
+.IOT .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.IOT .txt-sobre h2 span{
+    color: #ff0000;
+}
+
+.IOT .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+section.IA{
+    padding: 40px 4%;
+}
+
+section.IA .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.IA .txt-sobre{
+    color:#fff;
+}
+
+.IA .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.IA .txt-sobre h2 span{
+    color: #ff0000;
+}
+
+.IA .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* ÁREAS DO CONHECIMENTO */
+
+section.linguagens{
+    padding: 40px;
+}
+
+section.linguagens .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.linguagens .txt-sobre{
+    color:#fff;
+}
+
+.linguagens .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.linguagens .txt-sobre h2 span{
+    color: #ff0000;
+}
+
+.linguagens .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+section.ciencias-da-natureza{
+    padding: 40px;
+}
+
+section.ciencias-da-natureza .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.ciencias-da-natureza .txt-sobre{
+    color:#fff;
+}
+
+.ciencias-da-natureza .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.ciencias-da-natureza .txt-sobre h2 span{
+    color: #ff0000;
+}
+
+.ciencias-da-natureza .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+section.ciencias-humanas{
+    padding: 40px;
+}
+
+section.ciencias-humanas .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.ciencias-humanas .txt-sobre{
+    color:#fff;
+}
+
+.ciencias-humanas .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.ciencias-humanas .txt-sobre h2 span{
+    color: #ff0000;
+}
+
+.ciencias-humanas .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+section.matematica{
+    padding: 40px;
+}
+
+section.matematica .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.matematica .txt-sobre{
+    color:#fff;
+}
+
+.matematica .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.matematica .txt-sobre h2 span{
+    color: #ff0000;
+}
+
+.matematica .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+section.TI{
+    padding: 40px;
+}
+
+section.TI .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.TI .txt-sobre{
+    color:#fff;
+}
+
+.TI .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.TI .txt-sobre h2 span{
+    color: #ff0000;
+}
+
+.TI .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+section.projeto-do-ano{
+    padding: 40px;
+}
+
+section.projeto-do-ano .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.projeto-do-ano .txt-sobre{
+    color:#fff;
+}
+
+.projeto-do-ano .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.projeto-do-ano .txt-sobre h2 span{
+    color: #ff0000;
+}
+
+.projeto-do-ano .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.projeto-do-ano .txt-sobre .veja-mais button{
+    width: 100px;
+    height: 90px;
+    border-radius: 20%;
+    border: 0;
+    background-color: #ff0000;
+    font-size: 22px; 
+    cursor: pointer;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #ff0000;
+}
+
+footer .line-footer p i{
+    color:#ff0000;
+    font-size: 22px; 
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
